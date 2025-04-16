@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Location Alert</string>
+    <string name="run_button_text">Метка</string>
+    <string name="settings_button_text">Настроики</string>
+    <string name="radius_label">Радиус</string>
+    <string name="radius_hint">Введите радиус</string>
+    <string name="radius_description">Поле для ввода радиуса поиска</string>
+    <string name="sound_label">Звук</string>
+    <string name="sound_spinner_description">Выберите звук уведомления</string>
+    <string name="save_button">Сохранить</string>
+</resources>

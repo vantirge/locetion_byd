@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".SettingsActivity">
+
+    <!-- TextView для радиуса -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/radius_label"
+        android:layout_marginBottom="8dp"
+        android:importantForAccessibility="yes"/>
+
+    <!-- Поле ввода радиуса -->
+    <EditText
+        android:id="@+id/etRadius"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:layout_marginBottom="16dp"
+        android:importantForAccessibility="yes"
+        android:autofillHints="radius"
+        android:hint="@string/radius_hint"
+        android:minHeight="48dp"
+        android:textColor="@color/black"
+        android:backgroundTint="@color/white"/>
+
+    <!-- TextView для звука -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/sound_label"
+        android:layout_marginBottom="8dp"
+        android:importantForAccessibility="yes"/>
+
+    <!-- Spinner для выбора звука -->
+    <Spinner
+        android:id="@+id/spinnerSounds"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginBottom="16dp"
+        android:importantForAccessibility="yes"
+        android:contentDescription="@string/sound_spinner_description"/>
+
+    <!-- Кнопка сохранения -->
+    <Button
+        android:id="@+id/btnSave"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:text="@string/save_button"
+        android:layout_gravity="center_horizontal"
+        android:minWidth="120dp"/>
+</LinearLayout>
